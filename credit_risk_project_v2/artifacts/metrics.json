@@ -1,0 +1,26 @@
+{
+  "model1_default_predictor": {
+    "roc_auc": 0.7102424663874856,
+    "pr_auc": 0.3564438118198542
+  },
+  "model2_grade_classifier": {
+    "accuracy": 0.8042,
+    "macro_f1": 0.8077419660599604,
+    "classes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  },
+  "model3_rate_predictor": {
+    "mae_pp": 0.9471825257652386,
+    "r2": 0.900916862642881
+  },
+  "out_of_time_current_dataset": {
+    "model1_roc_auc": 0.6845243063542481,
+    "model2_accuracy": 0.7813,
+    "model3_mae_pp": 1.0836654185945827
+  }
+}

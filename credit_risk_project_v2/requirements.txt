@@ -1,0 +1,15 @@
+# IMPORTANT: numpy, scikit-learn, joblib, and pandas versions here MUST match
+# what was used to train and pickle the models in artifacts/*.joblib.
+# Mismatched versions cause joblib.load() to fail at container startup
+# (e.g. "PCG64 is not a known BitGenerator" / InconsistentVersionWarning).
+# If you ever retrain with train.py, re-check these versions with:
+#   python3 -c "import numpy, sklearn, joblib, pandas as p; print(numpy.__version__, sklearn.__version__, joblib.__version__, p.__version__)"
+# and update this file to match before redeploying.
+numpy==2.4.4
+scikit-learn==1.8.0
+joblib==1.5.3
+pandas==3.0.2
+
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.7.4
