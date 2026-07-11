@@ -9,7 +9,12 @@ numpy==2.4.4
 scikit-learn==1.8.0
 joblib==1.5.3
 pandas==3.0.2
+shap==0.50.0
 
 fastapi==0.111.0
 uvicorn[standard]==0.30.1
 pydantic==2.7.4
+
+# Not pickled/serialized to disk (unlike numpy/sklearn above), so no strict
+# version pin needed here -- shap just runs computations at request time.
+shap>=0.45
