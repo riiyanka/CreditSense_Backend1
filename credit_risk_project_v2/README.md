@@ -72,15 +72,7 @@ Open `http://localhost:8000/docs` for the interactive test UI.
 
 ## Deploying it — easiest first
 
-**1. Railway (recommended)** — push to GitHub (artifacts/*.joblib included,
-they're a few MB), then railway.app → New Project → Deploy from GitHub repo.
-It auto-detects the `Dockerfile` and builds. Public URL in ~2 minutes.
-
-**2. ngrok (fastest, no real deployment)** — run the API locally, then
-`ngrok http 8000` for an instant public tunnel. Good for quick demos; dies
-when your laptop sleeps.
-
-**3. Render** — same idea as Railway, choose "Docker" environment. Free tier
+*. Render** — same idea as Railway, choose "Docker" environment. Free tier
 has a ~30s cold start after inactivity.
 
 ## Known limitations / next steps
