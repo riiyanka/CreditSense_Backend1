@@ -18,8 +18,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 # Panel 5 agent layer
-from P5_LLM import explainer_agent, negotiation_agent, compliance_agent
-
+from app.P5_LLM import explainer_agent, negotiation_agent, compliance_agent
 ARTIFACT_DIR = Path(__file__).resolve().parent.parent / "artifacts"
 
 app = FastAPI(
